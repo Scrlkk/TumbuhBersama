@@ -19,8 +19,6 @@ export function ContactSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid lg:grid-cols-12 gap-12 items-start">
-          
-          {/* Left Column: Contact Info & Map placeholder */}
           <div className="lg:col-span-5 space-y-8 text-left">
             <div className="space-y-3">
               <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-forest-dark font-serif">
@@ -30,8 +28,6 @@ export function ContactSection() {
                 Punya pertanyaan tentang program, kemitraan CSR perusahaan, atau ingin mengundang TumbuhBersama ke sekolah/komunitas Anda?
               </p>
             </div>
-
-            {/* Contact Details List */}
             <div className="space-y-4 pt-2">
               <Card className="shadow-sm">
                 <CardContent className="flex items-start gap-4 p-4">
@@ -76,8 +72,6 @@ export function ContactSection() {
               </Card>
             </div>
           </div>
-
-          {/* Right Column: Contact Form */}
           <Card className="lg:col-span-7 p-8 sm:p-10 shadow-lg text-left bg-white">
             <h3 className="text-2xl font-bold text-brand-forest-dark mb-2">Kirim Pesan</h3>
             <p className="text-xs sm:text-sm text-brand-forest-dark/70 mb-6">

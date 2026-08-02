@@ -8,13 +8,11 @@ export function HeroSection() {
       id="hero"
       className="from-brand-cream-dark via-brand-cream to-brand-cream relative overflow-hidden bg-linear-to-b pt-32 pb-20 md:pt-40 md:pb-28"
     >
-      {/* Decorative Organic Shapes Background */}
       <div className="bg-brand-leaf/15 absolute top-10 right-0 -z-10 h-96 w-96 rounded-full blur-3xl" />
       <div className="bg-brand-terracotta/10 absolute bottom-0 left-10 -z-10 h-80 w-80 rounded-full blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-8">
-          {/* Left Column: Text & CTA */}
           <motion.div
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
@@ -47,20 +45,20 @@ export function HeroSection() {
               depan nusantara yang hijau dan berkelanjutan.
             </p>
 
-            {/* CTAs */}
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
               <motion.div
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
+                className="w-full sm:w-auto"
               >
                 <Button
                   asChild
                   size="lg"
-                  className="bg-brand-forest text-brand-cream hover:bg-brand-forest-dark rounded-full px-7 py-6 font-bold shadow-lg transition-all"
+                  className="bg-brand-forest text-brand-cream hover:bg-brand-forest-dark w-full sm:w-auto rounded-full px-7 py-6 font-bold shadow-lg transition-all"
                 >
                   <a
                     href="#action-volunteer"
-                    className="flex items-center gap-2 text-base"
+                    className="flex items-center justify-center gap-2 text-base"
                   >
                     Gabung Relawan <ArrowRight className="h-5 w-5" />
                   </a>
@@ -70,15 +68,16 @@ export function HeroSection() {
               <motion.div
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
+                className="w-full sm:w-auto"
               >
                 <Button
                   asChild
                   size="lg"
-                  className="bg-brand-terracotta hover:bg-brand-terracotta-hover rounded-full px-7 py-6 font-bold text-white shadow-md transition-all"
+                  className="bg-brand-terracotta hover:bg-brand-terracotta-hover w-full sm:w-auto rounded-full px-7 py-6 font-bold text-white shadow-md transition-all"
                 >
                   <a
                     href="#action-donate"
-                    className="flex items-center gap-2 text-base"
+                    className="flex items-center justify-center gap-2 text-base"
                   >
                     Donasi Pohon
                   </a>
@@ -86,7 +85,6 @@ export function HeroSection() {
               </motion.div>
             </div>
 
-            {/* Trust Badges */}
             <div className="border-brand-forest-dark/10 grid max-w-lg grid-cols-3 gap-4 border-t pt-6">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="text-brand-forest h-5 w-5" />
@@ -108,8 +106,6 @@ export function HeroSection() {
               </div>
             </div>
           </motion.div>
-
-          {/* Right Column: Hero Visual Card with Motion */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -117,10 +113,7 @@ export function HeroSection() {
             className="relative lg:col-span-5"
           >
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              {/* Organic Frame Background */}
               <div className="from-brand-forest to-brand-leaf absolute inset-0 scale-105 rotate-3 rounded-[2.5rem] bg-linear-to-tr opacity-80 blur-sm" />
-
-              {/* Main Card Image */}
               <div className="bg-brand-forest-dark relative space-y-6 overflow-hidden rounded-[2.5rem] border-4 border-white/20 p-6 text-left text-white shadow-2xl">
                 <div className="bg-brand-forest/50 relative flex h-64 items-center justify-center overflow-hidden rounded-2xl sm:h-72">
                   <img
@@ -148,8 +141,6 @@ export function HeroSection() {
                     ekosistem biota laut lokal.
                   </p>
                 </div>
-
-                {/* Progress bar */}
                 <div className="space-y-1.5">
                   <div className="h-2.5 w-full overflow-hidden rounded-full bg-white/20">
                     <motion.div
@@ -166,12 +157,11 @@ export function HeroSection() {
                 </div>
               </div>
 
-              {/* Floating Stat Badge */}
               <motion.div
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
-                className="absolute -bottom-6 -left-6 flex items-center gap-3 rounded-2xl border border-gray-100 bg-white p-4 shadow-xl"
+                className="absolute -bottom-6 -left-0 sm:-left-6 right-0 sm:right-auto mx-4 sm:mx-0 flex items-center justify-center sm:justify-start gap-3 rounded-2xl border border-gray-100 bg-white p-4 shadow-xl"
               >
                 <div className="bg-brand-terracotta/15 text-brand-terracotta flex h-12 w-12 items-center justify-center rounded-xl font-bold">
                   <TreePine className="h-6 w-6 text-brand-terracotta" />

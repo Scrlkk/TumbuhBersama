@@ -17,7 +17,6 @@ import {
   Wallet,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -50,12 +49,10 @@ export function ActionSection() {
 
   return (
     <section id="action" className="relative overflow-hidden bg-brand-forest-dark py-20 text-white md:py-28">
-      {/* Ambient Atmospheric Glows */}
       <div className="bg-brand-leaf/10 pointer-events-none absolute -top-20 -right-20 h-125 w-125 rounded-full blur-3xl" />
       <div className="bg-brand-terracotta/10 pointer-events-none absolute -bottom-20 -left-20 h-125 w-125 rounded-full blur-3xl" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -68,13 +65,11 @@ export function ActionSection() {
           <p className="text-base text-white/80 sm:text-lg">
             Pilihlah bagaimana Anda ingin berkontribusi: meluangkan waktu & tenaga sebagai relawan atau menyumbangkan bibit pohon.
           </p>
-
-          {/* Premium Segmented Toggle Switch */}
-          <div className="mt-6 inline-flex rounded-full border border-white/15 bg-white/10 p-1.5 backdrop-blur-md shadow-inner">
+          <div className="mt-6 flex flex-col sm:inline-flex sm:flex-row gap-2 sm:gap-0 rounded-3xl sm:rounded-full border border-white/15 bg-white/10 p-1.5 backdrop-blur-md shadow-inner">
             <button
               id="action-volunteer"
               onClick={() => setActiveTab("volunteer")}
-              className={`flex items-center gap-2.5 rounded-full px-6 py-3 text-sm font-bold transition-all duration-300 ${
+              className={`flex w-full sm:w-auto justify-center items-center gap-2.5 rounded-full px-6 py-3 text-sm font-bold transition-all duration-300 ${
                 activeTab === "volunteer"
                   ? "bg-brand-leaf text-brand-forest-dark shadow-lg shadow-brand-leaf/20 scale-[1.02]"
                   : "text-white/80 hover:text-white hover:bg-white/5"
@@ -85,7 +80,7 @@ export function ActionSection() {
             <button
               id="action-donate"
               onClick={() => setActiveTab("donate")}
-              className={`flex items-center gap-2.5 rounded-full px-6 py-3 text-sm font-bold transition-all duration-300 ${
+              className={`flex w-full sm:w-auto justify-center items-center gap-2.5 rounded-full px-6 py-3 text-sm font-bold transition-all duration-300 ${
                 activeTab === "donate"
                   ? "bg-brand-terracotta text-white shadow-lg shadow-brand-terracotta/20 scale-[1.02]"
                   : "text-white/80 hover:text-white hover:bg-white/5"
@@ -95,11 +90,8 @@ export function ActionSection() {
             </button>
           </div>
         </motion.div>
-
-        {/* Tab Content Box - Glassmorphic Card */}
         <div className="relative mx-auto max-w-3xl overflow-hidden rounded-3xl border border-white/15 bg-white/10 p-6 text-left shadow-2xl backdrop-blur-xl sm:p-10">
           <AnimatePresence mode="wait">
-            {/* Volunteer Form */}
             {activeTab === "volunteer" && (
               <motion.div
                 key="volunteer"
@@ -217,8 +209,6 @@ export function ActionSection() {
                 )}
               </motion.div>
             )}
-
-            {/* Donation Box */}
             {activeTab === "donate" && (
               <motion.div
                 key="donate"
@@ -254,7 +244,6 @@ export function ActionSection() {
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmitDonation} className="space-y-6">
-                    {/* Donator Information */}
                     <div className="grid gap-4 sm:grid-cols-2">
                       <div className="space-y-2">
                         <label className="flex items-center gap-1.5 text-xs font-semibold text-white/90">
@@ -281,7 +270,6 @@ export function ActionSection() {
                       </div>
                     </div>
 
-                    {/* Quick Nominal Chips with Badges */}
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
                         <label className="text-xs font-semibold text-white/90">Pilih Nominal Donasi Pohon</label>
@@ -330,8 +318,6 @@ export function ActionSection() {
                         })}
                       </div>
                     </div>
-
-                    {/* Custom Amount Input with Currency Prefix */}
                     <div className="space-y-2">
                       <label className="text-xs font-semibold text-white/90">Atau Nominal Custom (Rp)</label>
                       <div className="relative flex items-center">
@@ -350,8 +336,6 @@ export function ActionSection() {
                         />
                       </div>
                     </div>
-
-                    {/* Payment Method Quick Selector */}
                     <div className="space-y-2.5">
                       <label className="text-xs font-semibold text-white/90">Metode Pembayaran</label>
                       <div className="grid grid-cols-3 gap-3">
@@ -390,8 +374,6 @@ export function ActionSection() {
                         </button>
                       </div>
                     </div>
-
-                    {/* Dynamic Impact Summary Card */}
                     <div className="rounded-2xl border border-brand-terracotta/30 bg-brand-terracotta/15 p-4 text-white">
                       <div className="flex items-center justify-between gap-3">
                         <div className="flex items-center gap-3">
@@ -416,14 +398,13 @@ export function ActionSection() {
                         </div>
 
                         {calculatedTrees > 0 && (
-                          <Badge variant="terracotta" className="hidden items-center gap-1 text-xs sm:inline-flex">
+                          <div  className="hidden items-center gap-1 text-xs sm:inline-flex">
                             <Award className="h-3.5 w-3.5" /> + E-Sertifikat
-                          </Badge>
+                          </div>
                         )}
                       </div>
                     </div>
 
-                    {/* Submit Button */}
                     <div className="pt-1">
                       <motion.div whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.98 }}>
                         <Button

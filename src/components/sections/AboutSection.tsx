@@ -33,9 +33,7 @@ export function AboutSection() {
   return (
     <section id="about" className="bg-brand-cream py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Two Column Layout */}
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          {/* Left Column: Image Collage */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -59,8 +57,6 @@ export function AboutSection() {
                 </h4>
               </div>
             </div>
-
-            {/* Overlapping Secondary Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -77,8 +73,6 @@ export function AboutSection() {
               </p>
             </motion.div>
           </motion.div>
-
-          {/* Right Column: Narrative */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -125,8 +119,6 @@ export function AboutSection() {
             </div>
           </motion.div>
         </div>
-
-        {/* Stats Grid */}
         <div className="mt-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat, idx) => {
             const Icon = stat.icon;

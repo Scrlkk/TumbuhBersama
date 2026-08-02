@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { TreePine, Menu, X, Heart, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LogoImage from "@/assets/style/images/TumbuhBersama.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,17 +24,14 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Brand Logo */}
         <a href="#hero" className="flex items-center gap-2.5 group">
-          <div className="w-10 h-10 rounded-full bg-brand-leaf flex items-center justify-center text-brand-forest-dark group-hover:scale-105 transition-transform">
-            <TreePine className="w-6 h-6 stroke-[2.5]" />
+          <div className="w-10 h-10 rounded-full flex items-center justify-center text-brand-forest-dark group-hover:scale-105 transition-transform overflow-hidden">
+            <img src={LogoImage} alt="TumbuhBersama Logo" className="w-full h-full object-cover" />
           </div>
           <span className={`text-xl font-bold tracking-tight font-serif ${isScrolled ? "text-brand-cream" : "text-brand-forest-dark"}`}>
             Tumbuh<span className="text-brand-leaf">Bersama</span>
           </span>
         </a>
-
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
           <a
             href="#about"
@@ -68,8 +66,6 @@ export function Navbar() {
             Kontak
           </a>
         </nav>
-
-        {/* CTA Buttons */}
         <div className="hidden md:flex items-center gap-3">
           <Button
             asChild
@@ -91,8 +87,6 @@ export function Navbar() {
             </a>
           </Button>
         </div>
-
-        {/* Mobile menu trigger */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className={`md:hidden p-2 rounded-lg ${
@@ -103,8 +97,6 @@ export function Navbar() {
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
-
-      {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-brand-forest-dark text-brand-cream px-6 pt-4 pb-6 space-y-4 shadow-xl border-t border-white/10">
           <a

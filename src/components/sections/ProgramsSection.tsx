@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { TreePine, Waves, GraduationCap, MapPin, Users, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 
@@ -81,8 +80,6 @@ export function ProgramsSection() {
   return (
     <section id="programs" className="py-20 md:py-28 bg-brand-cream-dark/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 text-left">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -97,8 +94,6 @@ export function ProgramsSection() {
               Pilih aksi lingkungan yang paling sesuai dengan kepedulian Anda. Setiap partisipasi memberi arti besar.
             </p>
           </motion.div>
-
-          {/* Filter Categories */}
           <div className="flex flex-wrap gap-2">
             {[
               { id: "all", label: "Semua Program" },
@@ -125,8 +120,6 @@ export function ProgramsSection() {
             })}
           </div>
         </div>
-
-        {/* Program Cards Grid with AnimatePresence */}
         <motion.div layout className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           <AnimatePresence>
             {filteredPrograms.map((program) => {
@@ -145,19 +138,16 @@ export function ProgramsSection() {
                 >
                   <Card className="rounded-3xl overflow-hidden border border-brand-forest-dark/10 shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between group text-left h-full">
                     <div>
-                      {/* Image Header */}
                       <div className="relative h-56 overflow-hidden">
                         <img
                           src={program.image}
                           alt={program.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
-                        <Badge className="absolute top-4 left-4 bg-brand-forest-dark/80 backdrop-blur-md text-brand-cream text-xs font-semibold px-3 py-1 flex items-center gap-1 border-none">
+                        <div className="absolute top-4 left-4 bg-brand-forest-dark/80 backdrop-blur-md text-brand-cream text-xs font-semibold px-3 py-1 flex items-center gap-1 border-none">
                           <MapPin className="w-3.5 h-3.5 text-brand-leaf" /> {program.location}
-                        </Badge>
+                        </div>
                       </div>
-
-                      {/* Card Content */}
                       <div className="p-6 space-y-4">
                         <h3 className="text-xl font-bold text-brand-forest-dark group-hover:text-brand-forest transition-colors leading-snug">
                           {program.title}
@@ -165,8 +155,6 @@ export function ProgramsSection() {
                         <p className="text-sm text-brand-forest-dark/75 line-clamp-2">
                           {program.description}
                         </p>
-
-                        {/* Progress Bar */}
                         <div className="space-y-2 pt-2">
                           <div className="flex justify-between text-xs font-bold text-brand-forest-dark">
                             <span>Capaian: {program.currentCount} / {program.targetCount} {program.unit}</span>
@@ -176,8 +164,6 @@ export function ProgramsSection() {
                         </div>
                       </div>
                     </div>
-
-                    {/* Footer Action */}
                     <div className="px-6 pb-6 pt-2 flex items-center justify-between border-t border-gray-100 mt-auto">
                       <div className="flex items-center gap-1.5 text-xs text-gray-500 font-medium">
                         <Users className="w-4 h-4 text-brand-terracotta" /> Butuh {program.volunteersNeeded} relawan
