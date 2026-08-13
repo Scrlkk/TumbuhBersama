@@ -1,4 +1,5 @@
 # JUDUL KARYA WEBSITE
+TumbuhBersama: Platform Kolaborasi Digital untuk Reboisasi dan Restorasi Ekosistem Berkelanjutan
 
 ## Instansi
 Universitas Sebelas Maret
@@ -20,8 +21,8 @@ Universitas Sebelas Maret
   - **Warga Lokal:** Memberdayakan ekonomi dan sosial warga setempat (seperti kelompok tani hutan) sebagai perawat bibit dan fasilitator lapangan (*green jobs*).
   - **Lingkungan:** Mempercepat pemulihan lahan kritis dan menciptakan ekosistem hijau yang berkelanjutan.
 
-- **Relevansi dengan Tema "Humanity OS":**
-  Proyek ini mengimplementasikan konsep *Humanity OS* dengan menjadikan teknologi bukan sebagai alat yang mengasingkan, melainkan sebagai "sistem operasi" yang mengoptimalkan sifat dasar manusia (kemanusiaan)—yaitu **empati dan gotong royong**. Kami menggunakan teknologi untuk memproses niat baik menjadi kolaborasi aksi nyata demi menyembuhkan satu-satunya rumah kita: Bumi.
+- **Relevansi dengan Subtema "Tata Lingkungan Lestari":**
+  Proyek ini merupakan wujud nyata dari upaya *Tata Lingkungan Lestari* dengan menyediakan sistem pengelolaan (tata) yang terstruktur untuk pemulihan ekosistem. TumbuhBersama tidak hanya berhenti pada aksi seremonial penanaman pohon, tetapi menata siklus keberlanjutan (lestari) melalui kolaborasi warga lokal yang bertugas merawat bibit jangka panjang. Dengan transparansi teknologi, proyek ini memastikan setiap jengkal lahan yang direstorasi dapat terus hidup dan memberi manfaat ekologis yang lestari bagi masa depan.
 
 ## Tautan / Link Deploy Website
 https://tumbuh-bersama.vercel.app/ 
