@@ -7,9 +7,11 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 text-left md:grid-cols-12">
           <div className="space-y-4 md:col-span-5">
             <div className="flex items-center gap-2.5">
-              <div className="bg-brand-leaf text-brand-forest-dark flex h-9 w-9 items-center justify-center rounded-full">
-                <TreePine className="h-5 w-5 stroke-[2.5]" />
-              </div>
+              <img
+                src="/TumbuhBersama.png"
+                alt="Logo TumbuhBersama"
+                className="h-9 w-auto"
+              />
               <span className="font-serif text-2xl font-bold text-white">
                 Tumbuh<span className="text-brand-leaf">Bersama</span>
               </span>

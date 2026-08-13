@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { TreePine, Menu, X, Heart, Users } from "lucide-react";
+import { Menu, X, Heart, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LogoImage from "@/assets/style/images/TumbuhBersama.png";
 

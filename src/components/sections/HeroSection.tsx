@@ -117,7 +117,7 @@ export function HeroSection() {
               <div className="bg-brand-forest-dark relative space-y-6 overflow-hidden rounded-[2.5rem] border-4 border-white/20 p-6 text-left text-white shadow-2xl">
                 <div className="bg-brand-forest/50 relative flex h-64 items-center justify-center overflow-hidden rounded-2xl sm:h-72">
                   <img
-                    src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80"
+                    src="/Tangan tanaman.jpg"
                     alt="Aksi Penanaman Pohon Bersama"
                     className="h-full w-full object-cover"
                   />

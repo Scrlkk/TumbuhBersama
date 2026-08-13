@@ -43,9 +43,9 @@ export function AboutSection() {
           >
             <div className="relative overflow-hidden rounded-[2.5rem] border-4 border-white shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?auto=format&fit=crop&w=800&q=80"
+                src="/Rumah Kaca.avif"
                 alt="Aksi Komunitas TumbuhBersama"
-                className="h-100 w-full object-cover md:h-120"
+                className="h-100 w-full object-cover md:h-120" 
               />
               <div className="from-brand-forest-dark/80 absolute inset-0 bg-linear-to-t via-transparent to-transparent" />
               <div className="absolute right-6 bottom-6 left-6 text-left text-white">
