@@ -1,4 +1,4 @@
-import { TreePine, Globe, Share2, MessageCircle, Mail } from "lucide-react";
+import { Globe, Share2, MessageCircle, Mail } from "lucide-react";
 
 export function Footer() {
   return (
