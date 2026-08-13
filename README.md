@@ -1,5 +1,4 @@
-# JUDUL KARYA WEBSITE
-TumbuhBersama: Platform Kolaborasi Digital untuk Reboisasi dan Restorasi Ekosistem Berkelanjutan
+# TumbuhBersama: Platform Kolaborasi Digital untuk Reboisasi dan Restorasi Ekosistem Berkelanjutan
 
 ## Instansi
 Universitas Sebelas Maret
